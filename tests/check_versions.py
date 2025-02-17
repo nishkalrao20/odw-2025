@@ -13,7 +13,7 @@ The error code is a combination of the 4 errors:
 
 TODO:
   - add CLI (for file names, mode of operation, etc.)?
-  - should we split that in 2 seperate scripts
+  - should we split that in 2 separate scripts
     (one for requirements.txt)?
   - extend (or create a new script) to compare environment.yml
     to production environment

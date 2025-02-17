@@ -14,6 +14,10 @@ import yaml
 parser = argparse.ArgumentParser(
     description='Check that the cells are executed in order',
 )
+parser.add_argument(
+    '-e', '--allow-empty-cells',
+    action='store_true'
+)
 parser.add_argument('notebook')
 
 # Parse CLI
@@ -30,6 +34,9 @@ for cell in content["cells"]:
         execution_count = cell["execution_count"]
     except KeyError:
         #print("Markdown cell", file=sys.stderr)
+        continue
+    if execution_count is None and args.allow_empty_cells:
+        #print("Ignoring empty cell")
         continue
     #print(f"Expected: {last_execution_count+1}, Got: {execution_count}")
     if execution_count != last_execution_count + 1:

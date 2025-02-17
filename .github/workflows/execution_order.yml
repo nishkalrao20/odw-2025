@@ -26,7 +26,7 @@ jobs:
       run: |
         for file in Tutorials/Day_${{ matrix.day }}/*ipynb; do
             echo "Checking ${file}";
-            if ! ./tests/check_execution_order.py "${file}"; then
+            if ! ./tests/check_execution_order.py -e "${file}"; then
                 echo "::error file=${file},title=Error";
                 exit 1;
             fi

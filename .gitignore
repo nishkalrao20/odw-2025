@@ -2,6 +2,16 @@
 # It is used by our CI scripts to store their content
 /tmp/
 
+# Ignore some apple-specific files
+# Taken from https://github.com/github/gitignore/blob/main/Global/macOS.gitignore
+# (only the General section)
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# The remaining of this file is taken from
+# https://github.com/github/gitignore/blob/main/Python.gitignore
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -19,7 +19,7 @@ jobs:
         shell: bash -l {0}
     strategy:
       matrix:
-        python-version: [3.9]
+        python-version: [3.11]
         day: [1, 2, 3]
 
     steps:
@@ -32,7 +32,7 @@ jobs:
         conda env create -f environment.yml
     - name: Test notebooks execution
       run: |
-        conda activate igwn-py39-lw
+        conda activate odw-py311
         for file in Tutorials/Day_${{ matrix.day }}/*ipynb; do
             echo "Checking ${file}";
             if ! ./tests/check_run.sh "${file}"; then

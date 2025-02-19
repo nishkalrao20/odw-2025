@@ -51,6 +51,8 @@ args = parser.parse_args()
 # Read in the requirements file
 requirements = {}
 for line in args.requirements:
+    if line.startswith('#'):
+        continue
     module, version = line.split("==")
     requirements[module] = version.rstrip("\n")
 args.requirements.close()

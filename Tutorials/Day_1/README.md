@@ -1,4 +1,4 @@
-## Quick start
+# Quick start
 
 Click a badge below to run the notebooks
 
@@ -6,13 +6,11 @@ Click a badge below to run the notebooks
 
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gw-odw/odw/blob/main/)
 
-
-### Challenge Questions
+## Challenge Questions
 
 * Answer associated challenge questions in the [online course](https://gw-odw.thinkific.com)
 
-
-### More documentation
+## More documentation
 
 * [gwosc client](https://pypi.org/project/gwosc/)
 * [GWpy home page](https://gwpy.github.io)

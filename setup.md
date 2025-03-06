@@ -2,7 +2,12 @@
 
 In order to be able to execute the notebooks with the tutorials, you should configure your workspace following one of the options below. If you have trouble or need help setting the workspace up, you can contact the GW community at [ask.igwn.org](https://ask.igwn.org). **We encourage the participants to test the following steps beforehand of the hands-on sessions.**
 
+**Notebooks:**
+If you are not familiar with Jupyter notebooks, google one of the many introductory guides available on the internet, like <a href="https://realpython.com/jupyter-notebook-introduction/">this one</a>. Also, taking a look at the <a href="https://colab.research.google.com/notebooks/basic_features_overview.ipynb">Examples</a> offered by Google Colab can be helpful.
+
 The various options are listed in order of difficulty. However, whenever possible, we recommend the participants with some experience with Python environments to follow [Option 3](#option3), installing the requirements on their laptops and executing the tutorial notebooks from there. This has the advantage of avoiding any possible issue with online servers, including unstable internet connection or uneven memory and server availability, both on Colab and on MyBinder.
+
+This workshop uses [Python version 3.11](https://www.python.org/downloads/release/python-3110/).
 
 ## Option 1: Google Colab
 
@@ -10,7 +15,7 @@ The various options are listed in order of difficulty. However, whenever possibl
 
 <img src='./share/video-icon.png' width=18 /> [Video instructions](https://drive.google.com/file/d/17jYkGoVIavJa1B_Fbi6xK2D3jCFQT-A7/view?usp=sharing)
 
-1. To run the notebooks, click the badge:  [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gw-odw/odw-2024/blob/main/)
+1. To run the notebooks, click the badge:  [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gw-odw/odw/blob/main/)
 
 2. Double click the notebook of your choice
 
@@ -20,7 +25,7 @@ The various options are listed in order of difficulty. However, whenever possibl
 
     **Warnings:** a couple of warning messages are likely to show up, both of them are harmless.
 
-    - `Unrecognized runtime "igwn-py3#"; defaulting to "python3"`
+    - `Unrecognized runtime "xxxx"; defaulting to "python3"`
 
       This pop-up simply notifies you that this notebook has been created with a Python environment different than the default one of Colab. That's not a big deal because you will install all the missing dependencies with the command above.
 
@@ -39,9 +44,9 @@ The various options are listed in order of difficulty. However, whenever possibl
 
 <img src='./share/video-icon.png' width=18 /> [Video instructions](https://drive.google.com/file/d/1QkjdG6IHeTWq2XtPreakLydaZMedJCrX/view?usp=sharing)
 
-To run the notebooks, click the badge:  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gw-odw/odw-2024/HEAD)
+To run the notebooks, click the badge:  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gw-odw/odw/HEAD)
 
-This will build a Docker image (if not already present) with the dependency file `environment.yml`. Then a [JupyterHub](https://jupyterhub.readthedocs.io/en/latest/) server will be open hosting the contents of the `gw-odw/odw-2024` repo. To find the Tutorials, click the folders `Tutorials`, and then `Day 1`, `Day 2`, or `Day 3` to find the tutorials.
+This will build a Docker image (if not already present) with the dependency file `environment.yml`. Then a [JupyterHub](https://jupyterhub.readthedocs.io/en/latest/) server will be open hosting the contents of the repo. To find the Tutorials, click the folders `Tutorials`, and then `Day 1`, `Day 2`, or `Day 3` to find the tutorials.
 
 
 ## Option 3: You have a Linux or Apple/Mac computer -- Use conda
@@ -52,66 +57,44 @@ This will build a Docker image (if not already present) with the dependency file
 
 <img src='./share/video-icon.png' width=18 /> [Video instructions](https://drive.google.com/file/d/1YZcaY-35JiHXOH4unRe5ECSeDl8IZFZy/view?usp=sharing)
 
-This workshop uses [Python version 3.9](https://www.python.org/downloads/release/python-390/). We recommend creating a [Python virtual environment](https://docs.python.org/3.9/tutorial/venv.html) and install all the package dependencies there. The official environment with all the required packages is [igwn-py39](https://computing.docs.ligo.org/conda/environments/igwn-py39/), available from the International Gravitational-Wave Observatory Network ([IGWN](https://computing.docs.ligo.org/guide/)) community website. However, this environment can take about 4 Gb of space in your local pc so we provide also a *light-weight* version of this environment, with only the strictly necessary packages to execute the notebooks reducing to about 1 Gb the space needed and reducing also the time needed for installation.
+We provide a [Conda](https://www.anaconda.com/) environment with all the required packages.
+This guide will walk you through the configuration of this environment (named `odw-py311`).
 
-This guide will walk you through the configuration of these environments with [Conda](https://www.anaconda.com/).
+1. Install Miniconda by following the installation instructions for your operating system:
 
-1. Install miniconda:
+     - [Linux](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
+     - [macOS](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html)
 
-    - Visit the website https://conda.io/en/latest/miniconda.html
-    - Choose the version for Python 3.9
-    - Follow the [installation instructions](https://conda.io/projects/conda/en/latest/user-guide/install/) for your operating system:
-        - [Linux](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
-        - [macOS](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html)
-
+   Choose the "Miniconda" installer, not the full Anaconda Distribution.
    You may need to restart your computer after installation.
 
+2. Add the conda-forge channel
 
-2. If you want to install the full [igwn-py39 environment](https://computing.docs.ligo.org/conda/environments/igwn-py39/), download the YML dependencies file for the IGWN website:
-   * [YML file for Linux](https://computing.docs.ligo.org/conda/environments/linux/igwn-py39.yaml)
-   * [YML file for Intel MacOS](https://computing.docs.ligo.org/conda/environments/osx/igwn-py39.yaml)
-   * [YML file for Apple Silicon MacOS](https://computing.docs.ligo.org/conda/environments/osx-arm64/igwn-py39.yaml)
+   `conda config --add channels conda-forge`
 
-   Instead, for the *light-weight* environment, you can directly use the YML file from this repository:
-   * [YAML in this repository](./environment.yml)
+3. Create the environment.
 
-   **Note:** the name of the *light-weight* environment is **igwn-py39-lw** to distinguish it from the official one, `igwn-py39`. In the following steps, remember to add the "`-lw`" subfix to the name.
+   `conda env create --file environment.yml`
 
-3. Add the conda-forge channel
+4. Activate the environment.
 
-    `conda config --add channels conda-forge`
+   `conda activate odw-py311`
 
-4. Create the environment. <br/>
+5. Clone the workshop git repo
 
-   * Full igwn-py39 environment: `conda env create --file igwn-py39.yaml`
-   * Light-weight environment: `conda env create --file environment.yml`
+   `git clone https://github.com/gw-odw/odw.git`
 
+6. Move into the directory with the workshop git repo
 
-5. Activate the environment. <br/>
+   `cd odw`
 
-   * Full igwn-py39 environment: `conda activate igwn-py39`
-   * Light-weight environment: `conda activate igwn-py39-lw`
+7. Build a custom [jupyter kernel](https://ipython.readthedocs.io/en/stable/install/kernel_install.html) using the command
 
+   `python -m ipykernel install --user --name odw-py311 --display-name "Python (odw-py311)"`
 
-6. Clone the workshop git repo
+8. Start the Jupyter notebook server
 
-    `git clone https://github.com/gw-odw/odw-2024.git`
-
-7. Move into the directory with the workshop git repo
-
-    `cd odw-2024`
-
-8. Build a custom [jupyter kernel](https://ipython.readthedocs.io/en/stable/install/kernel_install.html) using the command
-
-   * Full igwn-py39 environment:`python -m ipykernel install --user --name igwn-py39 --display-name "Python (igwn-py39)"`
-   * Light-weight environment: `python -m ipykernel install --user --name igwn-py39-lw --display-name "Python (igwn-py39-lw)"`
-
-9. Start the Jupyter notebook server <br/>
-  `jupyter notebook` and select the kernel `igwn-py39` (or `igwn-py39-lw`) if this is not done by default.
-
-**Notebooks:**
-If you are not familiar with Jupyter notebooks, google one of the many introductory guides available on the internet, like <a href="https://realpython.com/jupyter-notebook-introduction/">this one</a>. Also, taking a look at the <a href="https://colab.research.google.com/notebooks/basic_features_overview.ipynb">Examples</a> offered by Google Colab can be helpful.
-
+   `jupyter notebook` and select the kernel `odw-py311` if this is not done by default.
 
 ## Option 4: Linux install on Windows with dedicated app (Windows 10 or 11)
 

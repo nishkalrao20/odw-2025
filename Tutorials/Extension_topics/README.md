@@ -1,4 +1,4 @@
-## Environment
+# Environment
 
 It's recommended to run the tutorials in a virtual environment of a `conda` environment.
 The `IGWN` conda environment is advised: [documentation](https://computing.docs.ligo.org/conda/).

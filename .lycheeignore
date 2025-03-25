@@ -21,3 +21,9 @@ https://dcc.ligo.org/LIGO-P1800370/public/%7Blabel%7D_GWTC-1.hdf5
 
 # Exclude all file-links. Workaround until https://github.com/lycheeverse/lychee/issues/1646 is resolved
 file://
+
+# These URL return 403 under lychee but work under a browser so we ignore them for now
+https://journals.aps.org/prx/pdf/10.1103/PhysRevX.9.011001
+https://journals.aps.org/prd/abstract/10.1103/PhysRevD.93.044006
+https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.161101
+https://doi.org/10.1088/0264-9381/21/20/024

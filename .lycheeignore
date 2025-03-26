@@ -27,3 +27,10 @@ https://journals.aps.org/prx/pdf/10.1103/PhysRevX.9.011001
 https://journals.aps.org/prd/abstract/10.1103/PhysRevD.93.044006
 https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.161101
 https://doi.org/10.1088/0264-9381/21/20/024
+
+# The GWOSC server returns http URLs
+# We ignore them for now
+http://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/H-H1_GWOSC_4KHZ_R1-1126259447-32.hdf5
+http://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/L-L1_GWOSC_4KHZ_R1-1126257415-4096.hdf5
+http://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/L-L1_GWOSC_4KHZ_R1-1126259447-32.hdf5
+http://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/H-H1_GWOSC_4KHZ_R1-1126257415-4096.hdf5

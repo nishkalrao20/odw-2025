@@ -51,8 +51,6 @@ This will build a Docker image (if not already present) with the dependency file
 
 ## Option 3: You have a Linux or Apple/Mac computer -- Use conda
 
-</a>
-
 <img src='https://www.wispresort.com/uploadedImages/Winter/intermediate.png' width=20 /> Intermediate (Some software installation; Will not work on Windows PC)
 
 <img src='./share/video-icon.png' width=18 /> [Video instructions](https://drive.google.com/file/d/1YZcaY-35JiHXOH4unRe5ECSeDl8IZFZy/view?usp=sharing)

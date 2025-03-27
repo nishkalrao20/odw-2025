@@ -9,7 +9,7 @@ Click a badge below to run the notebooks
 
 ### Challenge Questions
 
-* Answer associated challenge questions in the [online course](https://gw-odw.thinkific.com)
+* Answer associated challenge questions in the [online course](https://learn.gwosc.org)
 
 ### More documentation
 

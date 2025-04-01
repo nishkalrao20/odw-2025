@@ -8,7 +8,7 @@ https://github.com/gw-odw/odw/raw/main/Tutorials/Day_2/Data/PyCBC_T2_2.gwf/n
 https://github.com/gw-odw/odw/raw/main/Tutorials/Day_2/Data/PyCBC_T2_0.gwf/n
 https://github.com/gw-odw/odw/raw/main/Tutorials/Day_2/Data/PyCBC_T3_0.gwf/n
 https://lscsoft.docs.ligo.org/bilby/examples.html/n
-http://pycbc.org/pycbc/latest/html/noise.html/n
+https://pycbc.org/pycbc/latest/html/noise.html/n
 https://raw.githubusercontent.com/gw-odw/odw/main/Tutorials/Day_3/toy_model.csv/n
 https://dcc.ligo.org/public/0182/T2200137/001/O3bPE_downsampled.tar.gz/
 
@@ -27,3 +27,15 @@ https://journals.aps.org/prx/pdf/10.1103/PhysRevX.9.011001
 https://journals.aps.org/prd/abstract/10.1103/PhysRevD.93.044006
 https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.161101
 https://doi.org/10.1088/0264-9381/21/20/024
+
+# This URL is the portal toward Thinkific courses
+# It returns 403 from GitHub actions
+# We believe it's because Thinkific (which eventually answers) blocks GitHub IPs
+https://learn.gwosc.org
+
+# The GWOSC server returns http URLs
+# We ignore them for now
+http://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/H-H1_GWOSC_4KHZ_R1-1126259447-32.hdf5
+http://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/L-L1_GWOSC_4KHZ_R1-1126257415-4096.hdf5
+http://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/L-L1_GWOSC_4KHZ_R1-1126259447-32.hdf5
+http://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/H-H1_GWOSC_4KHZ_R1-1126257415-4096.hdf5

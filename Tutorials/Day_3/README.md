@@ -8,9 +8,9 @@ Click a badge below to run the notebooks
 
 ## Challenge Questions
 
-* Answer associated challenge questions in the [online course](https://gw-odw.thinkific.com)
+* Answer associated challenge questions in the [online course](https://learn.gwosc.org)
 
 ## More documentation
 
 * [bilby documentation](https://lscsoft.docs.ligo.org/bilby/index.html)
-* [PyCBC documentation](http://pycbc.org/pycbc/latest/html/)
+* [PyCBC documentation](https://pycbc.org/pycbc/latest/html/)

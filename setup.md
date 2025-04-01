@@ -11,7 +11,7 @@ This workshop uses [Python version 3.11](https://www.python.org/downloads/releas
 
 ## Option 1: Google Colab
 
-<img src='https://www.wispresort.com/uploadedImages/Winter/easy.png' width=20 /> Easy (No software installation; Works for any OS)
+🟢 Easy (No software installation; Works for any OS)
 
 <img src='./share/video-icon.png' width=18 /> [Video instructions](https://drive.google.com/file/d/17jYkGoVIavJa1B_Fbi6xK2D3jCFQT-A7/view?usp=sharing)
 
@@ -40,7 +40,7 @@ This workshop uses [Python version 3.11](https://www.python.org/downloads/releas
 
 ## Option 2: Run in mybinder
 
-<img src='https://www.wispresort.com/uploadedImages/Winter/easy.png' width=20 /> Easy (No software installation; Works for any OS) - Warning: note that `mybinder` can take several minutes to load.
+🟢 Easy (No software installation; Works for any OS) - Warning: note that `mybinder` can take several minutes to load.
 
 <img src='./share/video-icon.png' width=18 /> [Video instructions](https://drive.google.com/file/d/1QkjdG6IHeTWq2XtPreakLydaZMedJCrX/view?usp=sharing)
 
@@ -51,7 +51,7 @@ This will build a Docker image (if not already present) with the dependency file
 
 ## Option 3: You have a Linux or Apple/Mac computer -- Use conda
 
-<img src='https://www.wispresort.com/uploadedImages/Winter/intermediate.png' width=20 /> Intermediate (Some software installation; Will not work on Windows PC)
+🟡 Intermediate (Some software installation; Will not work on Windows PC)
 
 <img src='./share/video-icon.png' width=18 /> [Video instructions](https://drive.google.com/file/d/1YZcaY-35JiHXOH4unRe5ECSeDl8IZFZy/view?usp=sharing)
 
@@ -96,7 +96,7 @@ This guide will walk you through the configuration of this environment (named `o
 
 ## Option 4: Linux install on Windows with dedicated app (Windows 10 or 11)
 
-<img src='https://www.wispresort.com/uploadedImages/Winter/hard.png' width=20 /> Advanced (For Windows 10 or 11)
+🟠 Advanced (For Windows 10 or 11)
 
 If you are using Windows and would like to run the notebooks directly, install [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install). There are additional instructions [here](https://ask.igwn.org/t/run-the-workshops-under-windows-with-wsl/84) for getting started with the notebooks.
 Note that even if Conda works many packages needed for the Tutorials are not running on Windows at all, so we suggest to follow one of the previous options and not to run the Tutorials directly on Windows.

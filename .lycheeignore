@@ -32,10 +32,3 @@ https://doi.org/10.1088/0264-9381/21/20/024
 # It returns 403 from GitHub actions
 # We believe it's because Thinkific (which eventually answers) blocks GitHub IPs
 https://learn.gwosc.org
-
-# The GWOSC server returns http URLs
-# We ignore them for now
-http://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/H-H1_GWOSC_4KHZ_R1-1126259447-32.hdf5
-http://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/L-L1_GWOSC_4KHZ_R1-1126257415-4096.hdf5
-http://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/L-L1_GWOSC_4KHZ_R1-1126259447-32.hdf5
-http://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/H-H1_GWOSC_4KHZ_R1-1126257415-4096.hdf5
